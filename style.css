@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 微軟正黑體;
+    font-weight: 400;
+}
+
+html, body{
+    background-image: url(https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#box{
+    width:50%;
+    max-width: 600px;
+    margin:0 auto;
+    padding: 380px 0;
+    color:white;
+}
+
+/* 偽元素 */
+.type::after{
+    content: "";
+    border-right: 1px solid white;
+    animation: 1s infinite shine;
+}
+
+@keyframes shine {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
